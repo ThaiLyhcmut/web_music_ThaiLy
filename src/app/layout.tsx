@@ -12,6 +12,7 @@ const quicksand = Quicksand({
   display: "swap",
 });
 
+
 export const metadata: Metadata = {
   title: "Web Music",
   description: "Chill Music Real-Time",
