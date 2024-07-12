@@ -14,7 +14,7 @@ export default function PlayVolume() {
   }
   return (
     <>
-      <div className="flex items-end box-volume">
+      <div className="flex items-end box-volume sm:block hidden">
         <button className="text-[16px] inner-button-volume">
           <FaVolumeHigh />
         </button>

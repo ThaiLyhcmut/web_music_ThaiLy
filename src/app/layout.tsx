@@ -27,10 +27,10 @@ export default function RootLayout({
       <body className={`${quicksand.className} bg-[#292929] text-white`}>
         <div className="container mx-auto ">
           <div className="flex items-start">
-            <div className="w-[280px]">
+            <div className="xl:w-[280px] w-[200px] md:block hidden h-[200px] md:mt-[0] mt-[70px] button-item-menu">
               <Sider />
             </div>
-            <div className="flex-1 ml-[20px]">
+            <div className="flex-1 sm:ml-[20px] mx-[2px]">
               <Suspense><Search /></Suspense>
               <main className="mb-[120px] mt-[30px]">{children}</main>
             </div>

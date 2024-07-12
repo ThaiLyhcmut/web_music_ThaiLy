@@ -11,13 +11,13 @@ export default async function Section_1() {
   const DataSongList:any = await getSongList(3);
   return(
     <>
-      <div className="flex items-start">
-        <div className="w-[534px]">
+      <div className="flex items-start flex-wrap">
+        <div className="xl:w-[534px] w-[full]">
           <BannerHome/>
+          
         </div>
-        <div className="flex-1 ml-[20px]">
+        <div className="xl:flex-1 xl:ml-[20px] ml-[0px]">
           <Title text={"Nghe Nhieu"}/>
-          {/* List */}
           <SongList data={DataSongList}/>
         </div>
       </div>

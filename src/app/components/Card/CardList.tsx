@@ -7,7 +7,7 @@ export default function CardList(props: {
   const {data} = props
   return(
     <>
-      <div className="grid grid-cols-5 gap-[20px]">
+      <div className="grid sm:grid-cols-5 grid-cols-3 gap-[20px]">
         {data.map((item,index) => (
           <CardItem
             key={index}

@@ -82,7 +82,7 @@ export default function SiderMenu(){
             (isLogin != undefined)?(
               (isLogin == true)?(
                 (item.link != "/login" && item.link != "/register")?(
-                  <li key={index} className={"flex items-center mb-[15px] font-700 hover:text-primary text-[22px] capitalize " + (pathname === item.link ? "text-primary" : "text-white" )}>
+                  <li key={index} className={"flex items-center mb-[15px] font-700 hover:text-primary xl:text-[22px] text-[14px] capitalize line-clamp-1 " + (pathname === item.link ? "text-primary" : "text-white" )}>
                     {item.icon}
                     <Link href={item.link} className="ml-[20px]">{item.title}</Link>
                   </li>
@@ -91,7 +91,7 @@ export default function SiderMenu(){
                   </div>
                 )
               ):(
-                <li key={index} className={"flex items-center mb-[15px] font-700 hover:text-primary text-[22px] capitalize " + (pathname === item.link ? "text-primary" : "text-white" )}>
+                <li key={index} className={"xl:text-[22px] text-[14px] flex items-center mb-[15px] font-700 hover:text-primary capitalize line-clamp-1 " + (pathname === item.link ? "text-primary" : "text-white" )}>
                   {item.icon}
                   <Link href={item.link} className="ml-[20px]">{item.title}</Link>
                 </li>
