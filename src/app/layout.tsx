@@ -16,6 +16,7 @@ const quicksand = Quicksand({
 export const metadata: Metadata = {
   title: "Web Music",
   description: "Chill Music Real-Time",
+  
 };
 
 export default function RootLayout({
@@ -25,6 +26,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Google AdSense */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2936465109378740"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
       <body className={`${quicksand.className} bg-[#292929] text-white`}>
         <div className="container mx-auto ">
           <div className="flex items-start">
